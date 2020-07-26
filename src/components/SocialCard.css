@@ -1,0 +1,113 @@
+.socialCard {
+  display: flex;
+  padding-right: 16px;
+  border-bottom: 1px solid #f8faff;
+  max-width: 500px;
+  min-width: 300px;
+}
+
+.socialCard__profileImage {
+  width: 150px;
+  padding: 7px;
+}
+
+.socialCard__profileImage > img {
+  width: 100%;
+  max-height: 50px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.socialCard__post > img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.socialCard__userDetailAndActions {
+  display: flex;
+}
+
+.socialCard__name {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.socialCard__description {
+  font-size: 14px;
+}
+
+.socialCard__actions > i {
+  flex-basis: 5%;
+  cursor: pointer;
+  transition: color, transform 450ms;
+  font-size: 20px;
+}
+
+.socialCard__actions > i:hover {
+  color: red;
+}
+
+.socialCard__userDetail {
+  flex-basis: 95%;
+}
+
+.socialCard__postDescription {
+  justify-content: flex-start;
+  margin-left: 7px;
+  padding: 7px;
+}
+
+.socialCard__userDetail {
+  padding: 7px;
+}
+
+.socialCard__post {
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.socialCard__userActions {
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  color: gray;
+}
+
+.socialCard__userActions > div > i {
+  margin-right: 7px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.socialCard__share {
+  color: green;
+}
+
+.socialCard__like {
+  color: red;
+}
+
+.socialCard__actionContent {
+  width: 150px;
+  z-index: 1000;
+  border: 1px solid lightgray;
+  list-style-type: none;
+  position: absolute;
+  right: 15px;
+  background: white;
+  border-radius: 3px;
+}
+
+.socialCard__actionContent > li {
+  font-size: 13px;
+  padding: 5px;
+  transition: background-color 450ms;
+  cursor: pointer;
+}
+
+.socialCard__actionContent > li:hover {
+  background-color: lightgray;
+}
